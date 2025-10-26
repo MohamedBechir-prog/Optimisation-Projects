@@ -1,28 +1,27 @@
-# Unit Commitment Problem
+# Optimization Algorithms Repository
 
-In this project, I will incrementally implement a unit commitment problem using Gurobi. The goal is to meet the projected electricity demand at each time interval by optimally dispatching various types of power plants.
+Welcome to this repository dedicated to a wide range of optimization problems and solution techniques. It serves as a curated collection of models, algorithms, and experiments focused on solving complex decision-making challenges in operations research and computational optimization.
 
-The time horizon spans a single day, divided into five periods to reflect typical fluctuations in electrical load throughout the day.
+## 📂 Contents
 
-| Time Period | Demand (MW) |
-| --- | --- |
-| 12 pm to 6 am | 15000 |
-| 6 am to 9 am | 30000 |
-| 9 am to 3 pm | 25000 |
-| 3 pm to 6 pm | 40000 |
-| 6 pm to 12 pm | 27000 |
+This repository includes:
 
-The dataset includes three types of conventional power plants, each characterized by its minimum and maximum power output, the number of units available, and generation costs.
+- **Unit Commitment Problem (UCP)**  
+  Models and solvers for scheduling power generation units efficiently under operational constraints.
 
+- **Linear Programming (LP)**  
+  Formulations and solutions for deterministic optimization problems with linear constraints and objectives.
 
-| Type | Available Units | Minimum output (MW) | Maximum output (MW) | Generation cost (€/MWh) |
-| --- | --- | --- | --- | --- |
-| 1 | 12 |  850 | 2000 |1.5 |
-| 2 | 10 | 1250 | 1750 |1.38 |
-| 3 | 5 | 1500 | 4000 |2.35 |
+- **Mixed-Integer Linear Programming (MILP)**  
+  Advanced models involving both continuous and discrete decision variables.
 
-The complexity of the model will gradually increase as the script progresses.
+- **Metaheuristic Algorithms**  
+  Heuristic-based approaches such as Genetic Algorithms, Simulated Annealing, and Particle Swarm Optimization for tackling large-scale or non-convex problems.
 
-This project is part of the Optimization coursework from my master's program in Energy Systems Optimization at Mines Paris.
+- **Stochastic Optimization**  
+  Techniques for modeling uncertainty in parameters, including scenario-based and probabilistic methods.
 
-The example can also be found in the fifth edition of **Model Building in Mathematical Programming by H. Paul Williams on pages 271-272 and 326-327**.
+## 🛠️ Technologies Used
+
+- Python (with libraries like Gurobipy, Pandas, NumPy)
+- Colab Notebooks
